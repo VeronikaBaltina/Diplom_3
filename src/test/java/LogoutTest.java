@@ -39,7 +39,7 @@ public class LogoutTest {
 
     @Test
     @Description("выход по кнопке «Выйти» в личном кабинете")
-    public void Logout() {
+    public void clickExitButton() {
         User user = UserGenerator.getRandom();
         ValidatableResponse createResponse = userClient.create(user);
         int statusCode = createResponse.extract().statusCode();
